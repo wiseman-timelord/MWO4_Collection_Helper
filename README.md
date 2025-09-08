@@ -1,2 +1,5 @@
 # MWO4_Helper
-Its a script to fix issues with my mod collection
+Status: Alpha
+
+### Description:
+Its a script to fix issues with my Oblivion Mod Collection, typically the folder structure is incorrect, because the mods were not created when a Vortex was invented. 
