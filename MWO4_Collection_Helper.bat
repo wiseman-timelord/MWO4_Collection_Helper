@@ -55,7 +55,7 @@ if exist ".\Version.dll" (
 if exist ".\MoreHeap.ini" (
     echo PASS: MoreHeap.ini already in root folder.
 ) else if exist ".\Data\MoreHeap.ini" (
-    copy /Y ".\Data\MoreHeap.ini" ".\MoreHeap.ini" >nul
+    move /Y ".\Data\MoreHeap.ini" ".\MoreHeap.ini" >nul
     echo PASS: MoreHeap.ini deployed ^(overwrote existing if any^).
 ) else (
     echo FAIL: MoreHeap.ini not found in .\Data.
