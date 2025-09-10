@@ -61,6 +61,19 @@ if exist ".\MoreHeap.ini" (
     echo FAIL: MoreHeap.ini not found in .\Data.
 )
 
+:: ---------- ROC - OCReborn Road Record.esp (Open Cities Reborn + Roads of Cyrodiil) ----------
+set "rocSrc=.\Data\01 Road Records\ROC - OCReborn Road Record.esp"
+set "rocDst=.\Data\ROC - OCReborn Road Record.esp"
+
+if exist "%rocDst%" (
+    echo PASS: ROC - OCReborn Road Record.esp already in Data folder.
+) else if exist "%rocSrc%" (
+    move /Y "%rocSrc%" "%rocDst%" >nul
+    echo PASS: ROC - OCReborn Road Record.esp moved ^(overwrote existing if any^).
+) else (
+    echo FAIL: ROC - OCReborn Road Record.esp not found in "01 Road Records".
+)
+
 :: ---------- Elys Silent Voice ----------
 set "elysPath=.\Data\obse\plugins"
 set "elysMissing=0"
